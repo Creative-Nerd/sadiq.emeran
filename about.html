@@ -1,367 +1,228 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Charity &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Sadiq Emeran</title>
+  <meta name="description" content="About Sadiq Emeran — WordPress developer focused on SEO and AI.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/space-grotesk-500-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-400-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- 
-	//////////////////////////////////////////////////////
+  <header class="site-header" data-header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">SE</span>
+        <span class="brand__text">
+          <span class="brand__name">Sadiq Emeran</span>
+          <span class="brand__role">WordPress · SEO · AI</span>
+        </span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <ul>
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="index.html#work">Work</a></li>
+          <li><a class="nav__link" href="about.html" aria-current="page">About</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--solid nav__cta" href="contact.html" data-magnetic>
+        Let’s talk
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+  <main id="main">
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="page-hero__backdrop" data-parallax></div>
+      <div class="container">
+        <p class="eyebrow">About</p>
+        <h1 class="page-title" data-split>Developer, strategist, tinkerer.</h1>
+        <p class="lede">
+          I’m Sadiq Emeran — I build WordPress sites, make them discoverable, and put AI behind
+          the busywork.
+        </p>
+      </div>
+    </section>
 
-	//////////////////////////////////////////////////////
-	 -->
+    <!-- ============ STORY ============ -->
+    <section class="section section--tight">
+      <div class="container about-split">
+        <div data-anim="reveal">
+          <h2 class="section-title" data-split>How I got here.</h2>
+        </div>
+        <!-- TODO Q4: real story copy -->
+        <div class="prose" data-anim="reveal">
+          <p>
+            I started with WordPress because it gives small teams ownership of their own corner of
+            the web — but a site is only worth building if people can <strong>find it</strong>.
+          </p>
+          <p>
+            That question pulled me into <strong>SEO</strong>: the technical audits, the schema, the
+            Core Web Vitals dashboards. Today I do both — build the site, then make it rank.
+          </p>
+          <p>
+            And when there’s repetitive work — content briefs, reporting, internal linking — I reach
+            for <strong>AI</strong>: scripts, APIs and workflows that give the humans their time back.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <!-- ============ TIMELINE ============ -->
+    <section class="section section--tight">
+      <div class="container">
+        <header class="section-head" data-anim="reveal">
+          <p class="eyebrow">Timeline</p>
+          <h2 class="section-title" data-split>The path so far.</h2>
+          <!-- TODO Q4: confirm real milestones/years -->
+        </header>
+        <div class="timeline" data-anim="reveal">
+          <div class="timeline__item">
+            <span class="timeline__year">2019</span>
+            <h3 class="timeline__title">First WordPress build</h3>
+            <p>Shipped a first client site and got hooked on the craft of building for the web.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__year">2021</span>
+            <h3 class="timeline__title">Turned to SEO</h3>
+            <p>Started treating rankings as part of the build, not an afterthought — audits, schema, speed.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__year">2024</span>
+            <h3 class="timeline__title">AI in the workflow</h3>
+            <p>Began wiring AI into content workflows and automations for leaner, faster delivery.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__year">2026</span>
+            <h3 class="timeline__title">Open for projects</h3>
+            <p>Available for WordPress builds, SEO work and AI integrations — remote-friendly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+    <!-- ============ SKILL GROUPS ============ -->
+    <section class="section section--tight">
+      <div class="container">
+        <header class="section-head" data-anim="reveal">
+          <p class="eyebrow">Toolkit</p>
+          <h2 class="section-title" data-split>Tools of the trade.</h2>
+        </header>
+        <div class="skill-groups" data-anim="reveal">
+          <div class="skill-group">
+            <h3 class="cap-card__title">WordPress</h3>
+            <ul>
+              <li class="chip">Custom themes</li>
+              <li class="chip">Gutenberg blocks</li>
+              <li class="chip">WooCommerce</li>
+              <li class="chip">ACF</li>
+              <li class="chip">PHP</li>
+              <li class="chip">Performance tuning</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="cap-card__title">SEO</h3>
+            <ul>
+              <li class="chip">Technical audits</li>
+              <li class="chip">Schema markup</li>
+              <li class="chip">Core Web Vitals</li>
+              <li class="chip">Keyword research</li>
+              <li class="chip">Local SEO</li>
+              <li class="chip">Analytics</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="cap-card__title">AI</h3>
+            <ul>
+              <li class="chip">Content workflows</li>
+              <li class="chip">ChatGPT API</li>
+              <li class="chip">Automations</li>
+              <li class="chip">Prompt engineering</li>
+              <li class="chip">Reporting bots</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'> -->
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Superfish -->
-	<link rel="stylesheet" href="css/superfish.css">
+    <!-- ============ CTA ============ -->
+    <section class="section cta">
+      <div class="container cta__inner" data-anim="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 class="cta__title" data-split>Let’s build something worth ranking.</h2>
+        <a class="btn btn--solid" href="contact.html" data-magnetic>
+          Start a project
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
 
-	<link rel="stylesheet" href="css/style.css">
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span class="brand__mark" aria-hidden="true">SE</span>
+            <span class="brand__text">
+              <span class="brand__name">Sadiq Emeran</span>
+              <span class="brand__role">WordPress · SEO · AI</span>
+            </span>
+          </a>
+          <p class="footer-blurb">Hand-built websites, optimised to be found — with AI doing the heavy lifting.</p>
+          <div class="social">
+            <!-- TODO Q7: real profile URLs -->
+            <a class="social__link" href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/></svg></a>
+            <a class="social__link" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg></a>
+            <a class="social__link" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16Zm0 1.44c-3.14 0-3.51.01-4.75.07-2.55.12-3.32.9-3.44 3.44-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.12 2.53.89 3.32 3.44 3.44 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c2.55-.12 3.32-.91 3.44-3.44.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.12-2.54-.89-3.32-3.44-3.44-1.24-.06-1.61-.07-4.75-.07Zm0 2.45a5.95 5.95 0 1 1 0 11.9 5.95 5.95 0 0 1 0-11.9Zm0 9.81a3.86 3.86 0 1 0 0-7.72 3.86 3.86 0 0 0 0 7.72Zm7.59-10.05a1.39 1.39 0 1 1-2.78 0 1.39 1.39 0 0 1 2.78 0Z"/></svg></a>
+            <a class="social__link" href="mailto:hello@sadiqemeran.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2Zm10 7.42L3.3 6.06A.5.5 0 0 0 3 6.5v.24l9 5.68 9-5.68V6.5a.5.5 0 0 0-.3-.44L12 11.42ZM21 8.08l-8.7 5.46a1 1 0 0 1-1 0L2.6 8.08V18h18.4V8.08Z"/></svg></a>
+          </div>
+        </div>
+        <nav aria-label="Footer">
+          <p class="footer-heading">Navigate</p>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer-heading">Contact</p>
+          <ul class="footer-list">
+            <!-- TODO Q7: confirm real email -->
+            <li><a href="mailto:hello@sadiqemeran.com">hello@sadiqemeran.com</a></li>
+            <li><a href="contact.html">Start a project</a></li>
+            <!-- TODO Q5: external writing/blog link -->
+            <li><a href="#">Writing (coming soon)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Sadiq Emeran. All rights reserved.</p>
+        <p>Hand-coded with HTML, CSS &amp; GSAP</p>
+      </div>
+    </div>
+  </footer>
 
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
-	<body>
-		<div id="fh5co-wrapper">
-		<div id="fh5co-page">
-		<div class="header-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-sm-6 text-left fh5co-link">
-						<a href="#">FAQ</a>
-						<a href="#">Forum</a>
-						<a href="#">Contact</a>
-					</div>
-					<div class="col-md-6 col-sm-6 text-right fh5co-social">
-						<a href="#" class="grow"><i class="icon-facebook2"></i></a>
-						<a href="#" class="grow"><i class="icon-twitter2"></i></a>
-						<a href="#" class="grow"><i class="icon-instagram2"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<header id="fh5co-header-section" class="sticky-banner">
-			<div class="container">
-				<div class="nav-header">
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index.html">Charity</a></h1>
-					<!-- START #fh5co-menu-wrap -->
-					<nav id="fh5co-menu-wrap" role="navigation">
-						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li>
-								<a href="index.html">Home</a>
-							</li>
-							<li>
-								<a href="#" class="fh5co-sub-ddown">Get Involved</a>
-								<ul class="fh5co-sub-menu">
-									<li><a href="#">Donate</a></li>
-									<li><a href="#">Fundraise</a></li>
-									<li><a href="#">Campaign</a></li>
-									<li><a href="#">Philantrophy</a></li>
-									<li><a href="#">Volunteer</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#" class="fh5co-sub-ddown">Projects</a>
-								 <ul class="fh5co-sub-menu">
-								 	<li><a href="#">Water World</a></li>
-								 	<li><a href="#">Cloth Giving</a></li>
-								 	<li><a href="#">Medical Mission</a></li>
-								</ul>
-							</li>
-							<li class="active"><a href="about.html">About</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
-		
-		
-
-		<div class="fh5co-hero">
-			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_2.jpg);">
-				<div class="desc animate-box">
-					<h2>We Are <strong>Non-profit</strong></h2>
-					<span>HandCrafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">FreeHTML5.co</a></span>
-					<span><a class="btn btn-primary btn-lg" href="#">Donate Now</a></span>
-				</div>
-			</div>
-
-		</div>
-		
-		<div id="fh5co-feature-product" class="fh5co-section-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center heading-section">
-						<h3>How we started.</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					</div>
-				</div>
-
-				<div class="row row-bottom-padded-md">
-					<div class="col-md-12 text-center animate-box">
-						<p><img src="images/cover_bg_1.jpg" alt="Free HTML5 Bootstrap Template" class="img-responsive"></p>
-					</div>
-					<div class="col-md-6 text-center animate-box">
-						<p><img src="images/cover_bg_2.jpg" alt="Free HTML5 Bootstrap Template" class="img-responsive"></p>
-					</div>
-					<div class="col-md-6 text-center animate-box">
-						<p><img src="images/cover_bg_3.jpg" alt="Free HTML5 Bootstrap Template" class="img-responsive"></p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="feature-text">
-							<h3>Love</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-text">
-							<h3>Compassion</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-text">
-							<h3>Charity</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-				</div>
-
-				
-			</div>
-		</div>
-
-		
-		<div id="fh5co-portfolio">
-			<div class="container">
-
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 text-center heading-section animate-box">
-						<h3>Our Gallery</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
-					</div>
-				</div>
-
-				
-				<div class="row row-bottom-padded-md">
-					<div class="col-md-12">
-						<ul id="fh5co-portfolio-list">
-
-							<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/cover_bg_1.jpg); ">
-								<a href="#" class="color-3">
-									<div class="case-studies-summary">
-										<span>Give Love</span>
-										<h2>Donation is caring</h2>
-									</div>
-								</a>
-							</li>
-						
-							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/cover_bg_3.jpg); ">
-								<a href="#" class="color-4">
-									<div class="case-studies-summary">
-										<span>Give Love</span>
-										<h2>Donation is caring</h2>
-									</div>
-								</a>
-							</li>
-
-							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/cover_bg_1.jpg); "> 
-								<a href="#" class="color-5">
-									<div class="case-studies-summary">
-										<span>Give Love</span>
-										<h2>Donation is caring</h2>
-									</div>
-								</a>
-							</li>
-							<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/cover_bg_3.jpg); ">
-								<a href="#" class="color-6">
-									<div class="case-studies-summary">
-										<span>Give Love</span>
-										<h2>Donation is caring</h2>
-									</div>
-								</a>
-							</li>
-						</ul>		
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4 col-md-offset-4 text-center animate-box">
-						<a href="#" class="btn btn-primary btn-lg">See Gallery</a>
-					</div>
-				</div>
-
-				
-			</div>
-		</div>
-		
-
-		
-		<div id="fh5co-content-section" class="fh5co-section-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>Leadership</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="fh5co-team text-center animate-box">
-							<figure>
-								<img src="images/person_1.jpg" alt="user">
-							</figure>
-
-							<div>
-								<h3>Jean Doe</h3>
-								<p><span>Founder</span></p>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-							
-							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-linkedin2"></i></a>
-								<a href="#"><i class="icon-facebook3"></i></a>
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="fh5co-team text-center animate-box">
-							<figure>
-								<img src="images/person_2.jpg" alt="user">
-							</figure>
-							<div>
-								<h3>John Doe</h3>
-								<p><span>Founder</span></p>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-linkedin2"></i></a>
-								<a href="#"><i class="icon-facebook3"></i></a>
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="fh5co-team text-center animate-box">
-							<figure>
-								<img src="images/person_3.jpg" alt="user">
-							</figure>
-							<div>
-								<h3>John Doe</h3>
-								<p><span>Founder</span></p>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-linkedin2"></i></a>
-								<a href="#"><i class="icon-facebook3"></i></a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- fh5co-content-section -->
-
-		
-		<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-facebook2"></i></a>
-								<a href="#"><i class="icon-instagram"></i></a>
-								<a href="#"><i class="icon-dribbble2"></i></a>
-								<a href="#"><i class="icon-youtube"></i></a>
-							</p>
-							<p>Copyright 2016 Free Html5 <a href="#">Charity</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	
-
-	</div>
-	<!-- END fh5co-page -->
-
-	</div>
-	<!-- END fh5co-wrapper -->
-
-	<!-- jQuery -->
-
-
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/sticky.js"></script>
-
-	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Superfish -->
-	<script src="js/hoverIntent.js"></script>
-	<script src="js/superfish.js"></script>
-	
-	<!-- Main JS -->
-	<script src="js/main.js"></script>
-
-	</body>
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/vendor/SplitText.min.js"></script>
+  <script src="js/vendor/ScrollToPlugin.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
 </html>
-

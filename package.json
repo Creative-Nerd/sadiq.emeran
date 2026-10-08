@@ -1,0 +1,21 @@
+{
+  "name": "sadiq-emeran-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Portfolio site for Sadiq Emeran \u2014 WordPress, SEO & AI. Static HTML/CSS/JS + GSAP.",
+  "scripts": {
+    "vendor": "mkdir -p js/vendor && cp node_modules/gsap/dist/gsap.min.js node_modules/gsap/dist/ScrollTrigger.min.js node_modules/gsap/dist/SplitText.min.js node_modules/gsap/dist/ScrollToPlugin.min.js js/vendor/",
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "preview": "vite preview --host 0.0.0.0 --port 3000",
+    "verify": "node scripts/verify.mjs",
+    "shots": "node scripts/shots.mjs"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.0",
+    "vite": "^7.1.0"
+  }
+}

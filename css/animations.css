@@ -1,0 +1,30 @@
+/* ============================================================
+   CSS keyframes + reduced-motion backstop (SPEC §6.4)
+   Scroll/JS-driven motion lives in GSAP; these are the
+   small decorative loops that don't need JS.
+   ============================================================ */
+
+@keyframes cue-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+.scroll-cue__line { animation: cue-bob 1.8s var(--ease-in-out-quart) infinite; }
+
+@keyframes status-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(209, 255, 77, 0.45); }
+  70% { box-shadow: 0 0 0 9px rgba(209, 255, 77, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(209, 255, 77, 0); }
+}
+.status__dot { animation: status-pulse 2.4s var(--ease-out-expo) infinite; }
+
+/* backstop: kill all decorative motion when the user asks for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
